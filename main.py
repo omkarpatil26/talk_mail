@@ -86,11 +86,13 @@ def get_email_info():
 
     send_email ()
 
-    talk('Hey lazy ass. Your email is sent')
-    talk('Do you want to send more email?')
+    talk('Hey, Your email is sent')
+    talk('if you want to send other email?  reply yes else anything')
     send_more = get_info()
     if 'yes' in send_more:
         get_email_info()
+    else:
+        print('Thankyou!!')
 
 
 get_email_info()
